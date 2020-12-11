@@ -1,0 +1,75 @@
+/* Eléments principaux de la page */
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+#bloc-page
+{
+    width: 100%;
+    margin: auto;
+}
+
+/* Header-positionement*/
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 60px 0px 60px;
+    height: 7em;
+    align-items: center;
+}
+
+/* Header-navigation*/
+ header nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+header nav li 
+{ b
+    flex-direction:row-reverse;
+    align-items: flex-end;
+}
+
+header nav a
+{
+    color: grey;
+    text-decoration: none;
+}
+
+/*header-nav: chg survole*/
+header nav a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+    padding-top: 58px;
+}
+
+/* txt gras onglet nav */
+#onglet-insc
+{
+    font-weight:bold;
+    color: #0065FC;
+}
+
+#onglet-heb
+{
+    /*color: #0065FC;
+    border-top: 3px solid #0065FC;*/
+    margin-right: 40px;
+}
+#onglet-act
+{
+    margin-right: 40px;
+}
+
+/*header nav*/
+.header-nav
+{
+    height: 5em;
+    line-height: 4em;
+    white-space: nowrap;
+}
+
