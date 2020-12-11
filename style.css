@@ -1,0 +1,14 @@
+/* Eléments principaux de la page */
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+
+
