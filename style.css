@@ -10,7 +10,20 @@ body
     margin: 0% 5% 0% 5%;;
 }
  
+p
+{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
 
+figure
+{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
 /* Header-positionement*/
 header
 {
@@ -20,7 +33,7 @@ header
     align-items: center;
     margin-right: 5%;
 }
-
+ 
 /* Header-navigation*/
  header nav ul
 {
@@ -86,6 +99,10 @@ header nav a:hover
     font-size: 30px;
     font-weight: bold;
 }
+.sous-titre
+{
+    margin-bottom: 30px;
+}
 
 #filtres
 {
@@ -131,20 +148,21 @@ header nav a:hover
     margin-bottom: 12px;
     color: #fff;
     cursor: pointer;
-    height: 55px;
-    width : 150px;
+    height: 72px;
+    width : 200px;
 }
 
 #formulaire
 {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    width : 270px;
+    width : 300px;
     margin: 0;
-    height: 55px;
+    height: 69px;
     border: none;
     font-weight: bold;
     padding-left: 8%;
+    border: solid 1px #F2F2F2;
 }
 
 .fa-map-marker-alt
@@ -156,12 +174,18 @@ header nav a:hover
 }
 
 /*Partie Filtre*/
+
+.btns-filter
+{
+    margin-right: 30px;
+}
 .fa-money-bill-wave
 {
     color: #0065FC;
     background-color: #DEEBFF;
     padding: 20px;
     border-radius: 40px;
+    margin-right: 13%;
 }
 
 .fa-child
@@ -170,6 +194,7 @@ header nav a:hover
     background-color: #DEEBFF;
     padding: 20px;
     border-radius: 40px;
+    margin-right: 15%;
 } 
 
 .fa-heart
@@ -178,6 +203,7 @@ header nav a:hover
     background-color: #DEEBFF;
     padding: 20px;
     border-radius: 40px;
+    margin-right: 15%;
 }
 
 .fa-dog
@@ -186,6 +212,7 @@ header nav a:hover
     background-color: #DEEBFF;
     padding: 20px;
     border-radius: 40px;
+    margin-right: 13%;
 }
 
 .info
@@ -202,16 +229,17 @@ header nav a:hover
     height: 20px;
     border-radius: 10px;
     text-align: center;
-    margin-right: 15px;
+    margin-right: 20px;
 }
 
 #filtres
 {
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px; 
+    margin-bottom: 50px; 
+    width: 80%;
 }
 
 #btn-economique
@@ -226,6 +254,9 @@ header nav a:hover
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    padding: 0% 4% 0% 0%;
+    white-space: nowrap;
+    
 
 }
 
@@ -241,6 +272,8 @@ header nav a:hover
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    padding: 0% 4% 0% 0%;
+    white-space: nowrap;
 }
 
 #btn-romantique
@@ -255,6 +288,8 @@ header nav a:hover
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    padding: 0% 4% 0% 0%;
+    white-space: nowrap;
 }
 
 #btn-animaux
@@ -269,29 +304,55 @@ header nav a:hover
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    padding: 0% 4% 0% 0%;
+    white-space: nowrap;
 }
 
     /*format etoile*/
+    .bluestar
+    {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        width: 12px;
+        height: 12px;
+        text-align: left;
+        object-fit: contain;
+        color: #0065FC;
+    }
+
+    .greystar
+    {
+        display: flex;
+        flex-direction: row;
+        padding-left: 5px;
+        width: 12px;
+        height: 12px;
+        text-align: left;
+        object-fit: contain;
+        color: #F2F2F2;
+    }
+
     .etoile-bleu-premiere
     {
         padding-left: 10px;
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
         text-align: left;
         object-fit: contain; 
     }
     
     .etoile-bleu
     {
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
         text-align: left; 
         object-fit: contain;
     }
     .etoile-grise
     {
-        width: 15px;
-        height:15px;
+        width: 12px;
+        height:12px;
         object-fit: contain;
     }
     
@@ -302,6 +363,8 @@ header nav a:hover
 {
     display: flex;
     justify-content: space-between;
+    align-content: stretch;
+    margin-top:50px;
 
 }
 #block-hebergement
@@ -310,23 +373,27 @@ header nav a:hover
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 75%;
-    height: 680px;
     margin-right: 4%;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 #encart-hotel
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: stretch;
     margin-left: 25px;
     margin-right: 25px;
 }
 
 #titre-hebergement
 {
-    padding-top:20px;
     font-size: 30px;  
     font-weight: bold;
     padding-left: 25px;
@@ -349,16 +416,17 @@ header nav a:hover
     background-color: white;
     border: 4px solid white;
     width: 25%;
-    height: 210px;
+    /*height: 210px;*/
     border-radius: 20px;
     margin-bottom: 25px;
     box-shadow: 2px 2px 6px #c3c2c2;
+    
 }
 
 .titre-hotel
 {
     padding-left: 10px;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
     vertical-align: top;
@@ -366,8 +434,8 @@ header nav a:hover
 
 .prix-hotel
 {
-    padding-left: 10px;
-    font-size: 14px;
+    padding: 2% 0% 6% 4%;
+    font-size: 18px;
     text-align: left;
     vertical-align: top;
 }
@@ -386,7 +454,7 @@ header nav a:hover
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 30%;
-    height: 680px;
+    height: 700px;
 }
 
 #encart-populaire
@@ -394,9 +462,9 @@ header nav a:hover
     height: 450px;
     padding-left: 5%;
     padding-right: 5%;
+    padding: 5% 5% 5% 5%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -409,14 +477,15 @@ header nav a:hover
     text-align: left;
     vertical-align: middle;
     display: flex;
+    justify-content: space-around;
 }    
 
 .hotel-populaire
 {
     background-color: white;
     border: 4px solid white;
-    width: 90%;
-    height: 140px;
+    width: 82%;
+    height: 148px;
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: 2px 2px 6px #c3c2c2;
@@ -440,12 +509,19 @@ header nav a:hover
 }
 .titre-hotel-pop
 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    padding: 5% 0% 2% 0%;
 }
 
 .prix-hotel-pop
 {
+    font-size: 18px;
+}
+
+.block-info p
+{
+    padding: 5px 0px 20px 0px;
     font-size: 18px;
 }
 
@@ -462,6 +538,10 @@ header nav a:hover
     padding-top: 3%;
 }
 
+.block-info
+{
+    padding-top: 3%;
+}
 .lieux
 {
     display: flex;
@@ -524,13 +604,6 @@ header nav a:hover
     height: 250px;
 }
 
-.block-info p
-{
-    padding: 10px 0px 15px 0px;
-    font-size: 22px;
-    font-weight: bold;
-}
-
 .img-longue
 {
     width: 100%;
@@ -576,40 +649,50 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 40px;
     width: 100%;
 }
 
 .nav-a-propos
 {
-margin-right: 100px;
 margin-left: 20px;
+padding-bottom: 15px;
 
 }
 
-.nos-hergements
+.nos-hebergements
 {
-    margin-right: 100px;
+    padding-bottom: 30px;
+}
+
+.assistance
+{
+    padding-bottom: 30px;
+}
+.a-propos
+{
+    padding-bottom: 30px;
 }
 
 footer nav ul
 {
     list-style-type: none;
     text-decoration: none;
+    padding-right: 19%;
+    padding-top: 30px;
 }
 
 footer nav li
 {
-    padding-bottom: 10px;
+    padding-bottom: 5%;
 }
 
-footer nav li strong
+footer nav
 {
-    padding-bottom: 20px;
-}
-
-.nav-a-propos
-{
-    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 2%;
 }
