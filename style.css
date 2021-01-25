@@ -250,7 +250,7 @@ header nav a:hover
 /*-------*/
 
 /*Survole filtre*/
-#btns:hover
+.btns:hover
     {
     background-color: #DEEBFF;
     cursor: pointer;
@@ -291,8 +291,8 @@ header nav a:hover
     justify-content: space-between;
     align-content: stretch;
     margin-top:50px;
-
 }
+
 #block-hebergement
 {
 
@@ -327,7 +327,6 @@ header nav a:hover
     vertical-align: top;
 }
 
-
 .img-hotel
 {
     width: 100%;
@@ -336,6 +335,7 @@ header nav a:hover
     border-top-right-radius: 20px;
     object-fit: cover;
 }
+
 .box-hotel
 {
     background-color: white;
@@ -372,7 +372,6 @@ header nav a:hover
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 36%;
-    height: 750px;
 }
 
 #encart-populaire
@@ -419,7 +418,6 @@ header nav a:hover
 .block-info-pop
 {
    padding: 4% 8% 2% 4%;
-
 }
 .titre-hotel-pop
 {
@@ -510,7 +508,6 @@ header nav a:hover
 }
 .haut-gauche
 {
-
     height: 250px;
 }
 
@@ -534,44 +531,25 @@ header nav a:hover
 footer
 {
     background-color: #F2F2F2;
-    display: flex;
     font-size: 20px;
-    margin-top: 40px;
-    width: 100%;
+    display: flex;
 }
 
 .nav-a-propos
 {
 margin-left: 20px;
-padding-bottom: 15px;
-
-}
-
-.nos-hebergements
-{
-    padding-bottom: 30px;
-}
-
-.assistance
-{
-    padding-bottom: 30px;
-}
-.a-propos
-{
-    padding-bottom: 30px;
 }
 
 footer nav ul
 {
     list-style-type: none;
-    text-decoration: none;
-    padding-right: 19%;
     padding-top: 30px;
+    min-width: 30%;
 }
 
 footer nav li
 {
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 footer nav
