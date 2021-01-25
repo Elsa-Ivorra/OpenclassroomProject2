@@ -477,7 +477,7 @@ header nav a:hover
     text-align: left;
     vertical-align: middle;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }    
 
 .hotel-populaire
@@ -497,7 +497,7 @@ aside a
 {
     max-width: 41%;
 }
-
+ 
 .img-hotel-pop
 {
     width: 100%;
