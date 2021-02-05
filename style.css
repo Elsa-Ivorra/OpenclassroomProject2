@@ -18,12 +18,22 @@ p
 
 h2
 {
-    font-size: 22px;
+    font-size: 19px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 
+}
+
+h3 
+{
+    font-size: 19px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 figure
@@ -41,7 +51,7 @@ header
 {
     display: flex;
     justify-content: space-between;
-    height: 7em;
+    height: 7rem;
     align-items: center;
     margin-right: 5%;
 }
@@ -97,8 +107,8 @@ header nav a:hover
 /*header nav*/
 .header-nav
 {
-    height: 5em;
-    line-height: 4em;
+    height: 5rem;
+    line-height: 4rem;
     white-space: nowrap;
 }
 /*-------*/
@@ -202,19 +212,25 @@ header nav a:hover
 {
     margin-top: 30px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 50px; 
     width: 80%;
 }
 
+
 .blue-btns
 {
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 20px;
-    border-radius: 40px;
-    margin-right: 15%; 
+    padding: 22px;
+    border-radius: 44px;
+    position: relative;
+    left: -3px;
+    font-size: 25px;
+    margin-right: 9%;
+    position: relative;
+    left: 6px;
 }
 
 .btns
@@ -227,8 +243,10 @@ header nav a:hover
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding: 0% 4% 0% 0%;
+    padding: 0% 3% 0% 0%;
     white-space: nowrap;
+    position: relative;
+    left: 11px;
 }
 
 .info
@@ -298,24 +316,14 @@ header nav a:hover
 
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 75%;
+    width: 81rem;
+    height: 44rem;
     margin-right: 4%;
     padding: 0% 1% 1% 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
-}
-
-#encart-hotel
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: stretch;
-    margin-left: 25px;
-    margin-right: 25px;
 }
 
 #titre-hebergement
@@ -325,6 +333,28 @@ header nav a:hover
     padding-left: 25px;
     text-align: left;
     vertical-align: top;
+    padding: 4% 0% 2% 2%;
+}
+
+.titre-hotel
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5rem;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 5%;
+}
+#encart-hotel
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .img-hotel
@@ -341,22 +371,11 @@ header nav a:hover
     background-color: white;
     border: 4px solid white;
     width: 30%;
+    height: 43%;
     border-radius: 20px;
     margin-bottom: 25px;
     box-shadow: 2px 2px 6px #c3c2c2;
 }
-
-.titre-hotel
-{
-    padding: 0% 0% 4% 4%;
-    font-size: 15px;
-    text-align: left;
-}
-
-.image-5-etoiles-heb
-    {
-        padding-left: 4%;
-    }
 
 .lien-afficher
 {
@@ -371,7 +390,8 @@ header nav a:hover
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 36%;
+    width: 35rem;
+    height: 45rem;
 }
 
 #encart-populaire
@@ -380,11 +400,12 @@ header nav a:hover
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    height: 37rem;
 }
 
 #titre-populaire
 {
-    padding: 0% 5% 0% 5%;
+    padding: 10% 9% 7% 9%;
     font-size: 25px; 
     display: flex;
     justify-content: space-between;
@@ -392,16 +413,17 @@ header nav a:hover
 
 .hotel-populaire
 {
-    max-width: 41%;
     height: 160px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 .box-pop
 {
     display:flex;
     background-color: white;
     border: 4px solid white;
-    width: 27em;
-    height: 10em;
+    width: 22rem;
+    height: 9rem;
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: 2px 2px 6px #c3c2c2;
@@ -409,8 +431,8 @@ header nav a:hover
  
 .img-hotel-pop
 {
-    width: 11em;
-    height: 10em;
+    width: 8rem;
+    height: 9rem;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -418,7 +440,12 @@ header nav a:hover
 
 .block-info-pop
 {
-   padding: 4% 8% 2% 4%;
+    padding: 1rem 2rem 1rem 1rem;
+    height: 7rem;
+    width: 11rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
 }
 .titre-hotel-pop
 {
@@ -438,7 +465,7 @@ header nav a:hover
 {
     font-size: 22px;
     font-weight: bold;
-    padding-top: 3%;
+    padding: 4% 0% 2% 0%;
 }
 
 .block-info
@@ -450,6 +477,7 @@ header nav a:hover
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 5%;
 }
 
 .encart-activites-1-img
@@ -457,7 +485,7 @@ header nav a:hover
     background-color: white;
     border-radius: 20px; 
     width: 23%;
-    height: 550px;
+    height: 35rem;
     box-shadow: 2px 2px 6px #c3c2c2;
 }
 
@@ -476,21 +504,21 @@ header nav a:hover
 
 .p-haut-gauche
 {
-    height: 300px;
+    height: 19rem;
 }
 
 .p-bas-gauche
 {
-    height: 200px;
+    height: 13rem;
 }
 
 .p-haut-droite
 {
-    height: 250px;
+    height: 15rem;
 }
 .p-bas-droite
 {
-    height: 250px;
+    height: 17rem;
 }
 
 .img-longue
@@ -509,22 +537,22 @@ header nav a:hover
 }
 .haut-gauche
 {
-    height: 250px;
+    height: 15rem;
 }
 
 .bas-gauche
 {
-    height: 150px;
+    height: 9rem;
 }
 
 .haut-droite
 {
-    height: 200px;
+    height: 11rem;
 }
 
 .bas-droite
 {
-    height: 200px;
+    height: 13rem;
 }
 /*-------*/
 
@@ -564,31 +592,29 @@ footer nav
 /*-------*/
 /*Media Queries*/
 
-@media screen and (max-width: 1760px)
+/*@media screen and (max-width: 1760px)
 {
 
     .box-pop
     {
-        width:23em;
+        width:23rem;
 
     }
     .img-hotel-pop
     {
-       width: 9em;
+       width: 9rem;
 }
 }
 
-1475
 @media all and (min-width:1475px) and (max-width: 1475px)
 {
-
     .box-pop
     {
-        width: 19em;
+        width: 19rem;
 
     }
     .img-hotel-pop
     {
-       width: 7em;
+       width: 7rem;
 }
-}
+}*/
