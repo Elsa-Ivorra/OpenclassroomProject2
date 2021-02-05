@@ -28,7 +28,7 @@ h2
 
 h3 
 {
-    font-size: 19px;
+    font-size: 17px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -313,13 +313,11 @@ header nav a:hover
 
 #block-hebergement
 {
-
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 81rem;
-    height: 44rem;
+    width: 70%;
     margin-right: 4%;
-    padding: 0% 1% 1% 1%;
+    padding: 0% 1% 0% 1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -390,17 +388,15 @@ header nav a:hover
 {
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 35rem;
-    height: 45rem;
+    width: 30%;
 }
 
 #encart-populaire
 {
-    padding: 0% 5% 5% 5%;
+    padding: 0% 5% 0% 5%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    height: 37rem;
 }
 
 #titre-populaire
@@ -413,7 +409,6 @@ header nav a:hover
 
 .hotel-populaire
 {
-    height: 160px;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -422,8 +417,8 @@ header nav a:hover
     display:flex;
     background-color: white;
     border: 4px solid white;
-    width: 22rem;
-    height: 9rem;
+    width: 80%;
+    height: 25%;
     border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: 2px 2px 6px #c3c2c2;
@@ -431,8 +426,8 @@ header nav a:hover
  
 .img-hotel-pop
 {
-    width: 8rem;
-    height: 9rem;
+    width: 130px;
+    height: 147px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -440,9 +435,9 @@ header nav a:hover
 
 .block-info-pop
 {
-    padding: 1rem 2rem 1rem 1rem;
-    height: 7rem;
-    width: 11rem;
+    padding: 2% 0% 3% 5%;
+    height: 90%;
+    width: 97%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -450,7 +445,7 @@ header nav a:hover
 .titre-hotel-pop
 {
     font-size: 15px;
-    padding-bottom: 20%;
+    padding-bottom: 9%;
 }
 
 /*-------*/
