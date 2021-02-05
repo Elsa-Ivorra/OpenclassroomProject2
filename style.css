@@ -42,9 +42,15 @@ figure
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-
 }
-/*-------*/
+
+a:-webkit-any-link 
+{
+    color: black;
+    text-decoration: none;
+}
+    
+    /*-------*/
 
 /* Header-positionement*/
 header
