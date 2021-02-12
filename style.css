@@ -203,19 +203,17 @@ header nav a:hover
 
 /*Partie Filtre*/
 
-/*.btns-filter
+.btns-filter
 {
-    margin-right: 30px;
-}*/
+    margin: 0% 2% 2% 0%;
+}
 
 #filtres
 {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center; 
-    width: 70%;
-    font-size: 22px; 
+    font-size: 20px; 
     font-weight: bold;
     margin:2% 0% 3% 0%;
 }
@@ -227,12 +225,8 @@ header nav a:hover
     background-color: #DEEBFF;
     padding: 18px;
     border-radius: 36px;
-    position: relative;
-    left: -3px;
     font-size: 22px;
-    margin-right: 9%;
-    position: relative;
-    left: 6px;
+    margin-right: 20px;
 }
 
 .btns
@@ -243,10 +237,9 @@ header nav a:hover
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    padding: 0% 3% 0% 0%;
+    padding-right: 2%;
+    margin: 0% 2% 2% 0%;
     white-space: nowrap;
-    position: relative;
-    left: 11px;
 }
 
 .info
@@ -432,22 +425,13 @@ header nav a:hover
     border-bottom-left-radius: 20px;
 }
 
-.img-hotel-pop-bas
-{
-    width: 243px;
-    height: 160px; 
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
 
 .block-info-pop
 {
     padding: 2% 0% 3% 5%;
     width: 97%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: space-around;
 }
 .titre-hotel-pop
@@ -595,29 +579,7 @@ footer nav
 /*-------*/
 /*Media Queries*/
 
-/*@media screen and (max-width: 1760px)
+@media screen and (max-width: 1434px)
 {
-
-    .box-pop
-    {
-        width:23rem;
-
-    }
-    .img-hotel-pop
-    {
-       width: 9rem;
+    /* Rédigez vos propriétés CSS ici */
 }
-}
-
-@media all and (min-width:1475px) and (max-width: 1475px)
-{
-    .box-pop
-    {
-        width: 19rem;
-
-    }
-    .img-hotel-pop
-    {
-       width: 7rem;
-}
-}*/
