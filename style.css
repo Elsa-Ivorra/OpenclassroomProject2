@@ -372,6 +372,9 @@ header nav a:hover
 {
     font-size: 18px;
     padding:3% 0% 3% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 /*-------*/
 
@@ -472,46 +475,47 @@ header nav a:hover
     background-color: white;
     border-radius: 20px; 
     width: 23%;
-    height: 35rem;
+    height: 556px;
     box-shadow: 2px 2px 6px #c3c2c2;
 }
 
 .encart-activites-2-img
 {
-    width: 23%; 
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 .pastille
 {
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 6px #c3c2c2;
-    margin-bottom: 30px;
-    margin-bottom: 12%;
 }
 
 .p-haut-gauche
 {
-    height: 19rem;
+    height: 303px;
 }
 
 .p-bas-gauche
 {
-    height: 13rem;
+    height: 206px;
 }
 
 .p-haut-droite
 {
-    height: 15rem;
+    height: 234px;
 }
 .p-bas-droite
 {
-    height: 17rem;
+    height: 274px;
 }
 
 .img-longue
 {
     width: 100%;
-    height: 500px;
+    height: 90%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -524,22 +528,22 @@ header nav a:hover
 }
 .haut-gauche
 {
-    height: 15rem;
+    height: 80%;
 }
 
 .bas-gauche
 {
-    height: 9rem;
+    height: 71%;
 }
 
 .haut-droite
 {
-    height: 11rem;
+    height: 75%;
 }
 
 .bas-droite
 {
-    height: 13rem;
+    height: 79%;
 }
 /*-------*/
 
@@ -579,7 +583,105 @@ footer nav
 /*-------*/
 /*Media Queries*/
 
-@media screen and (max-width: 1434px)
+@media all and (min-width: 1024px) and (max-width: 1434px)
+
+{
+    .box-hotel 
+    {
+        width: 40%;
+        height: 30%;
+    }
+
+    .hotel-populaire 
+    {
+        flex-flow: column nowrap;
+    }
+
+    .img-hotel-pop
+    {
+        width: 100%;
+        height: 25%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .encart-activites-1-img
+    {
+        height: 400px;
+    }
+    
+    .lieux
+    {
+        height: 400px;
+    }
+    .p-haut-gauche
+    {
+        height: 220px;
+    }
+    
+    .p-bas-gauche
+    {
+        height: 150px;
+    }
+    
+    .p-haut-droite
+    {
+        height: 175px;
+    }
+    .p-bas-droite
+    {
+        height: 190px;
+    }
+    
+    .img-longue
+    {
+        width: 100%;
+        height: 90%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+    }
+}
+
+@media all and (min-width: 540px) and (max-width: 1023px)
+
+{
+    .box-hotel 
+    {
+        width: 40%;
+        height: 30%;
+    }
+
+    .hotel-populaire 
+    {
+        flex-flow: column nowrap;
+    }
+
+    .img-hotel-pop
+    {
+        width: 100%;
+        height: 25%;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .lieux
+    {
+        flex-flow: row wrap; 
+
+    }
+
+    .encart-activites-1-img 
+    {
+        width: 48%;
+        margin-bottom: 5%;
+    }
+    .encart-activites-2-img
+    {
+        width: 48%;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 539px)
+
 {
     /* Rédigez vos propriétés CSS ici */
 }
