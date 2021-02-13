@@ -58,7 +58,6 @@ header
     justify-content: space-between;
     height: 7rem;
     align-items: center;
-    margin-right: 5%;
 }
 /*-------*/
 
@@ -67,38 +66,47 @@ header
 {
     width: 130px;
     height: 100px;
+    padding-top: 5%;
 }
 /*-------*/
  
 /* Header-navigation*/
- header nav ul
+.header-nav
 {
-    list-style-type: none;
+    height: 70%;
+    width: 30%;
+    line-height: 4rem;
+    white-space: nowrap;
     display: flex;
+    justify-content: space-between;
 }
 
-header nav li 
-{ 
-    flex-direction:row-reverse;
-    align-items: flex-end;
-    margin-right: 10%;
-}
-
-header nav a
+header span
 {
-    color: grey;
-    text-decoration: none;
-    font-size: 18px;
+    text-align: center;
+    width: 35%;
+    padding-top: 5%;
 }
+
 /*-------*/
 
 /*header-nav: chg survole*/
-header nav a:hover
+.onglet:hover
 {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
-    padding-top: 58px;
 }
+
+header span:hover
+{
+    border-top: 3px solid #0065FC;
+
+}
+
+/*.onglet-act:hover
+{
+    border-top: 3px solid #0065FC;
+
+}*/
 /*-------*/
 
 /* txt gras onglet nav */
@@ -106,15 +114,6 @@ header nav a:hover
 {
     font-weight:bold;
     color: #0065FC;
-}
-/*-------*/
-
-/*header nav*/
-.header-nav
-{
-    height: 5rem;
-    line-height: 4rem;
-    white-space: nowrap;
 }
 /*-------*/
 
