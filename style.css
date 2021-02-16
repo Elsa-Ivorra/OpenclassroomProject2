@@ -45,7 +45,6 @@ figure
 
 a:-webkit-any-link 
 {
-    color: black;
     text-decoration: none;
 }
     
@@ -87,11 +86,29 @@ header span
     width: 35%;
     padding-top: 5%;
 }
+.onglet-insc
+{
+    font-weight:bold;
+    color: #0065FC;
+}
+.onglet-heb
+{
+    color:black;
+}
 
+.onglet-act
+{
+    color:black;
+}
 /*-------*/
 
 /*header-nav: chg survole*/
-.onglet:hover
+.onglet-heb:hover
+{
+    color: #0065FC;
+}
+
+.onglet-act:hover
 {
     color: #0065FC;
 }
@@ -99,22 +116,9 @@ header span
 header span:hover
 {
     border-top: 3px solid #0065FC;
-
 }
-
-/*.onglet-act:hover
-{
-    border-top: 3px solid #0065FC;
-
-}*/
-/*-------*/
-
 /* txt gras onglet nav */
-#onglet-insc
-{
-    font-weight:bold;
-    color: #0065FC;
-}
+
 /*-------*/
 
 /*espace de recherche*/
@@ -226,6 +230,8 @@ header span:hover
     border-radius: 36px;
     font-size: 22px;
     margin-right: 20px;
+    position: relative;
+    left: -3px;
 }
 
 .btns
@@ -320,7 +326,6 @@ header span:hover
 {
     font-size: 25px;  
     font-weight: bold;
-    padding-left: 25px;
     text-align: left;
     vertical-align: top;
     padding: 4% 0% 2% 2%;
@@ -681,6 +686,121 @@ footer nav
 
 @media screen and (max-width: 539px)
 
-{
-    /* Rédigez vos propriétés CSS ici */
+{   
+    .header-nav
+    {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 9px;
+
+    }
+
+    .onglet-act
+    {
+        display: flex;
+        order: 2;
+    }
+
+    .onglet-heb
+    {
+        display: flex;
+        order: 1;
+    }
+
+    .onglet-insc
+    {
+        display: flex;
+        order: 0;
+    }
+
+    .blue-btns
+    {
+        padding: 18px;
+        border-radius: 36px;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    #filtres
+    {
+        font-size: 18px;
+    }
+    .btns
+    {
+        padding-right: 5%;
+    }
+    #bloc-page
+        {
+            margin: 0% 0% 0% 0%;
+        }
+    #section-heb
+    {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    #block-hebergement
+    {
+        width: 100%;
+        background-color: white;
+        margin: 2% 0% 2% 0%;
+        padding: 0%;
+    }
+    #encart-hotel
+    {
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 2% 0% 2% 0%;
+        width: 100%;
+        padding: 0%;
+    }
+    .box-hotel
+    {
+        width: 93%;
+    }
+
+    #titre-hebergement
+    {
+        padding: 4% 0% 5% 0%;
+    }
+
+    #block-populaire
+    {
+        width: 104%;
+        padding: 0% 0% 0% 0%;
+        border-radius: 0px;
+    }
+    #encart-populaire
+    {
+        padding: 0%;
+    }
+
+    .lieux
+    {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        height: 1300px;
+    }
+    .encart-activites-1-img
+    {
+        width: 93%;
+        height: 200px;
+    }
+    .img-longue
+    {
+        height: 70%;
+    }
+    .p-haut-gauche
+    {
+        height: 200px;
+    }
+    .encart-activites-2-img
+    {
+        width: 93%;
+        height: 200px;
+    }
+    .img-courte
+    {
+        height: 70%;
+    }
 }
