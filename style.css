@@ -728,13 +728,18 @@ footer nav
     {
         padding-right: 5%;
     }
+    
+    .btns-filter
+    {
+        width: 400px;
+    }
     #bloc-page
         {
             margin: 0% 0% 0% 0%;
         }
     #section-heb
     {
-        flex-flow: column nowrap;
+        flex-flow: column-reverse nowrap;
         align-items: center;
     }
 
