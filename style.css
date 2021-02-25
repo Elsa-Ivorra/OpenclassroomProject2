@@ -6,7 +6,7 @@ body
 
 #bloc-page
 {
-    margin: 0% 5% 0% 5%;
+    margin: 2% 8% 0% 5%;
 }
  
 p
@@ -40,41 +40,42 @@ a:-webkit-any-link
 header
 {
     display: flex;
-    justify-content: space-between;
-    height: 7rem;
-    align-items: center;
 }
+
 /*-------*/
 
 /* Header-taille-logo*/
-.logo
+#logo
 {
-    width: 130px;
-    height: 100px;
-    padding-top: 5%;
+    width: 70%;
 }
 /*-------*/
  
 /* Header-navigation*/
 .header-nav
 {
-    height: 70%;
     width: 30%;
     line-height: 4rem;
-    white-space: nowrap;
+}
+header ul
+{
     display: flex;
-    justify-content: space-between;
 }
 
 header li
 {
     list-style-type: none;
+    width: 50%;
 }
 header span
 {
     text-align: center;
     width: 35%;
     padding-top: 5%;
+}
+#onglet-insc
+{
+    display: inline-block;
 }
 .onglet-insc
 {
@@ -142,14 +143,13 @@ header span:hover
 
 .btn-localisation
 {
-    padding: 8px;
     background-color: #F2F2F2;
     text-shadow: 1px 1px 1px #000;
     height: 50px;
     border-top-left-radius: 20px;
     border-bottom-left-radius:20px;
-    width: 55px;
-    height: 55px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -658,13 +658,36 @@ footer nav
 @media screen and (max-width: 539px)
 
 {   
+    body
+    {
+        width: 95%;
+        height: 330rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header
+    {
+        flex-wrap: wrap;
+    }
+    #logo
+    {
+        width: 50%;
+    }
     .header-nav
     {
-        display: flex;
         flex-wrap: wrap;
         font-size: 9px;
-
+        width: 100%;
+        order: 3;
     }
+    header ul
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+
 
     .onglet-act, .onglet-heb, .onglet-insc
     {
@@ -737,17 +760,24 @@ footer nav
         padding: 0%;
     }
 
+    #block-actvites
+    {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    }
+
     .lieux
     {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: flex-start;
-        height: 1300px;
     }
     .encart-activites-1-img
     {
         width: 93%;
-        height: 200px;
+        height: 250px;
+        margin-bottom: 8%;
     }
     .img-longue
     {
@@ -755,15 +785,62 @@ footer nav
     }
     .p-haut-gauche
     {
-        height: 200px;
+        height: 250px;
+        margin-bottom: 7%;
     }
     .encart-activites-2-img
     {
         width: 93%;
-        height: 200px;
+    }
+    .p-bas-gauche
+    {
+        margin-bottom: 7%;
+    }
+
+    .p-haut-droite
+    {
+        height: 250px;
+        margin-bottom: 7%;
+    }
+    .p-bas-droite
+    {
+        height: 250px;
     }
     .img-courte
     {
         height: 70%;
+    }
+    .btn-search
+    {
+        font-size: 15px;
+        width: 120px;
+        height: 50px;
+    }
+    #formulaire
+    {
+        height: 50px;
+        width: 200px;
+    } 
+    .btn-localisation
+    {
+        height: 52px;
+        width: 55px;
+    }
+
+    .fa-map-marker-alt
+    {
+        font-size: 16px;
+    }
+    footer
+    {
+        width: 102%;
+    }
+    footer nav
+    {
+        flex-direction: column;
+    }
+    footer nav ul
+    {
+        padding-inline-start: 10px
     }
 }
