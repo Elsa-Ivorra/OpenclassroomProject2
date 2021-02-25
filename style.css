@@ -15,7 +15,7 @@ p
     margin-block-end: 0em;
 }
 
-h2
+h2, h3, figure
 {
     font-size: 19px;
     margin-block-start: 0em;
@@ -28,28 +28,14 @@ h2
 h3 
 {
     font-size: 17px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
     font-weight: bold;
-}
-
-figure
-{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 a:-webkit-any-link 
 {
     text-decoration: none;
-}
-    
+}  
     /*-------*/
-
 /* Header-positionement*/
 header
 {
@@ -80,6 +66,10 @@ header
     justify-content: space-between;
 }
 
+header li
+{
+    list-style-type: none;
+}
 header span
 {
     text-align: center;
@@ -274,7 +264,7 @@ header span:hover
 /*-------*/
 
 /*format etoile*/
-.bluestar
+.bluestar, .greystar
     {
         display: flex;
         flex-direction: row;
@@ -288,13 +278,6 @@ header span:hover
 
 .greystar
     {
-        display: flex;
-        flex-direction: row;
-        padding-left: 5px;
-        width: 12px;
-        height: 12px;
-        text-align: left;
-        object-fit: contain;
         color: #F2F2F2;
     }
     
@@ -518,13 +501,10 @@ header span:hover
 
 .img-longue
 {
-    width: 100%;
     height: 90%;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
 }
 
-.img-courte
+.img-longue, .img-courte
 {
     width: 100%;
     border-radius: 20px 20px 0px 0px;
@@ -608,15 +588,11 @@ footer nav
         border-radius: 20px 20px 0px 0px;
     }
 
-    .encart-activites-1-img
+    .encart-activites-1-img, .lieux
     {
         height: 400px;
     }
     
-    .lieux
-    {
-        height: 400px;
-    }
     .p-haut-gauche
     {
         height: 220px;
@@ -672,12 +648,7 @@ footer nav
 
     }
 
-    .encart-activites-1-img 
-    {
-        width: 48%;
-        margin-bottom: 5%;
-    }
-    .encart-activites-2-img
+    .encart-activites-1-img, .encart-activites-2-img
     {
         width: 48%;
         margin-bottom: 5%;
@@ -695,22 +666,9 @@ footer nav
 
     }
 
-    .onglet-act
+    .onglet-act, .onglet-heb, .onglet-insc
     {
         display: flex;
-        order: 2;
-    }
-
-    .onglet-heb
-    {
-        display: flex;
-        order: 1;
-    }
-
-    .onglet-insc
-    {
-        display: flex;
-        order: 0;
     }
 
     .blue-btns
