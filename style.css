@@ -794,6 +794,7 @@ footer nav
     }
     .p-bas-gauche
     {
+        height: 250px;
         margin-bottom: 7%;
     }
 
