@@ -661,7 +661,6 @@ footer nav
     body
     {
         width: 95%;
-        height: 330rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -685,15 +684,61 @@ footer nav
     {
         display: flex;
         justify-content: space-evenly;
+        padding-inline-start: 0px;
     }
-
-
 
     .onglet-act, .onglet-heb, .onglet-insc
     {
         display: flex;
+        font-size: 14px;
+    }
+    #onglet-insc
+    {
+        width: 40%;
+        align-self: center;
+    }
+    #onglet-act, #onglet-heb
+    {
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    .onglet-insc
+    {
+        justify-content: flex-end;
+    }
+    .onglet-heb, .onglet-act
+    {
+        justify-content: center;
+    }
+    .onglet-heb:hover
+    {
+        color: #0065FC;
     }
 
+    .onglet-act:hover
+    {
+        color: #0065FC;
+    }
+
+    #onglet-act:hover
+    {
+        border-bottom: 3px solid #0065FC;
+    }
+    #onglet-heb:hover
+    {
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #titre-search
+    {
+        font-size: 20px;
+        padding: 0px 60px 0px 20px;
+    }
+    .sous-titre
+    {
+        font-size: 14px;
+        padding-left: 20px;
+    }
     .blue-btns
     {
         padding: 18px;
@@ -717,6 +762,9 @@ footer nav
     #bloc-page
         {
             margin: 0% 0% 0% 0%;
+            display: flex;
+            flex-direction: column;
+            width: inherit;
         }
     #section-heb
     {
@@ -755,6 +803,10 @@ footer nav
         padding: 0% 0% 0% 0%;
         border-radius: 0px;
     }
+    #titre-populaire
+    {
+        padding: 12% 4% 9% 4%;
+    }
     #encart-populaire
     {
         padding: 0%;
@@ -763,10 +815,13 @@ footer nav
     #block-actvites
     {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     }
-
+    #titre-activites
+    {
+        margin-bottom: 7%;
+    }
     .lieux
     {
         flex-flow: column nowrap;
@@ -803,9 +858,11 @@ footer nav
         height: 250px;
         margin-bottom: 7%;
     }
+
     .p-bas-droite
     {
         height: 250px;
+        margin-bottom: 7%;
     }
     .img-courte
     {
