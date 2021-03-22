@@ -261,6 +261,8 @@ header span:hover
 {
     font-size: 18px;
     margin-bottom: 20px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .fa-info
@@ -938,8 +940,7 @@ footer nav
     {
         margin: 0px 5px 20px 22px;
         font-size: 16px;
-        display: flex;
-        flex-flow: row nowrap;
+
     }
 
     .fa-map-marker-alt
