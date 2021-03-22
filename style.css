@@ -186,10 +186,10 @@ header span:hover
 {
     visibility: visible;
 }
-
-.btn-search-mobile
+.fa-search
 {
     visibility: hidden;
+
 }
 
 #formulaire
