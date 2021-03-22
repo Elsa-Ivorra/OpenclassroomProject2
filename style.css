@@ -165,9 +165,7 @@ header span:hover
 .btn-search
 {
     text-shadow: 1px 1px 1px;
-    display: block;
     text-align: center;
-    vertical-align: middle;
     border-top-right-radius: 20px;
     border-bottom-right-radius:20px;
     background-color: #0065FC;
