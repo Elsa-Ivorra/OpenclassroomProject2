@@ -2,6 +2,7 @@
 body
 {
     font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
 }
 
 #bloc-page
@@ -31,9 +32,10 @@ h3
     font-weight: bold;
 }
 
-a:-webkit-any-link 
+a 
 {
     text-decoration: none;
+    color: black;
 }  
     /*-------*/
 /* Header-positionement*/
@@ -65,7 +67,7 @@ header ul
 header li
 {
     list-style-type: none;
-    width: 50%;
+    /*width: 50%;*/
 }
 header span
 {
@@ -76,6 +78,12 @@ header span
 #onglet-insc
 {
     display: inline-block;
+    align-self: center;
+    padding-left: 5%;
+}
+#onglet-heb
+{
+    padding-right: 15%;
 }
 .onglet-insc
 {
@@ -135,7 +143,6 @@ header span:hover
 
 #espace-recherche
 {
-    padding: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -158,6 +165,9 @@ header span:hover
 .btn-search
 {
     text-shadow: 1px 1px 1px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
     border-top-right-radius: 20px;
     border-bottom-right-radius:20px;
     background-color: #0065FC;
@@ -170,6 +180,16 @@ header span:hover
     cursor: pointer;
     height: 65px;
     width : 160px;
+}
+
+.txt
+{
+    visibility: visible;
+}
+
+.btn-search-mobile
+{
+    visibility: hidden;
 }
 
 #formulaire
@@ -621,7 +641,7 @@ footer nav
     }
 }
 
-@media all and (min-width: 540px) and (max-width: 1023px)
+@media all and (min-width: 801px) and (max-width: 1023px)
 
 {
     .box-hotel 
@@ -655,19 +675,20 @@ footer nav
     }
 }
 
-@media screen and (max-width: 539px)
+@media screen and (max-width: 800px)
 
 {   
     body
     {
-        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        /*overflow-y: hidden;*/
     }
     header
     {
         flex-wrap: wrap;
+        padding-left: 20px;
     }
     #logo
     {
@@ -739,6 +760,10 @@ footer nav
         font-size: 14px;
         padding-left: 20px;
     }
+    #espace-recherche
+    {
+        padding-left: 20px;
+    }
     .blue-btns
     {
         padding: 18px;
@@ -749,6 +774,7 @@ footer nav
     #filtres
     {
         font-size: 18px;
+        padding-left: 20px;
     }
     .btns
     {
@@ -764,12 +790,12 @@ footer nav
             margin: 0% 0% 0% 0%;
             display: flex;
             flex-direction: column;
-            width: inherit;
+            
         }
     #section-heb
     {
         flex-flow: column-reverse nowrap;
-        align-items: center;
+        align-items: center; 
     }
 
     #block-hebergement
@@ -794,7 +820,7 @@ footer nav
 
     #titre-hebergement
     {
-        padding: 4% 0% 5% 0%;
+        padding: 12% 4% 9% 4%;
     }
 
     #block-populaire
@@ -805,6 +831,7 @@ footer nav
     }
     #titre-populaire
     {
+
         padding: 12% 4% 9% 4%;
     }
     #encart-populaire
@@ -820,7 +847,7 @@ footer nav
     }
     #titre-activites
     {
-        margin-bottom: 7%;
+        padding: 12% 4% 9% 4%;
     }
     .lieux
     {
@@ -868,21 +895,51 @@ footer nav
     {
         height: 70%;
     }
+    .fa-search
+    {
+        visibility: visible;
+
+    }
+    .text
+    {
+        visibility: hidden;
+    }
     .btn-search
     {
-        font-size: 15px;
-        width: 120px;
+        text-shadow: 1px 1px 1px;
+        border-radius: 15px;
+        background-color: #0065FC;
+        padding: 0 13px;
+        font-size: 16px;
+        border: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+        cursor: pointer;
         height: 50px;
+        width : 25px;
     }
+   
     #formulaire
     {
         height: 50px;
-        width: 200px;
+        width: 140px;
+        font-size: 14px;
+        border-right: 0px;
+
     } 
     .btn-localisation
     {
         height: 52px;
         width: 55px;
+    }
+
+    .info
+    {
+        margin: 0px 5px 20px 22px;
+        font-size: 16px;
+        display: flex;
+        flex-flow: row nowrap;
     }
 
     .fa-map-marker-alt
@@ -896,6 +953,7 @@ footer nav
     footer nav
     {
         flex-direction: column;
+        padding-left: 0%;
     }
     footer nav ul
     {

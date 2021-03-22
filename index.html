@@ -18,7 +18,8 @@
 <body>
     <div id="bloc-page">
 
-        <header>
+        <header> 
+            
             <div id="logo">
                 <img src="images/logo/Reservia.svg" class="logo" alt="Logo Reservia">
             </div>
@@ -44,10 +45,13 @@
                     <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <form method="post" action="traitement.php">
-                    <!--<label for="choix">En plein centre ville ou en pleine nature</label><br>-->
                     <p><input type="search" name="formulaire" id="formulaire" value="Marseille, France" /></p>
                 </form>
-                <input class="btn-search" type="button" value="Rechercher">
+                <div class="btn-search"><p class="text">Rechercher</p><i class="fas fa-search"></i></p></div>
+
+            <!-- <input class="btn-search" type="button" value="Rechercher">
+               <i class="fas fa-search"></i>-->
+                
             </div>
         </div>
         <!--Fin Search-->
@@ -60,7 +64,7 @@
             <span class="btns"><i class="fas fa-heart blue-btns"></i>Romantique</span>
             <span class="btns"><i class="fas fa-dog blue-btns"></i>Animaux autorisés</span>
         </nav>
-        <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div class="info"><i class="fas fa-info"></i><p class="text-info">Plus de 500 logements sont disponibles dans cette ville</p></div>
         <!--Fin Filtres-->
 
         <section id="section-heb">
