@@ -710,7 +710,6 @@ footer nav
     #onglet-insc
     {
         width: 40%;
-        align-self: center;
     }
     #onglet-act, #onglet-heb
     {
@@ -819,7 +818,7 @@ footer nav
 
     #block-populaire
     {
-        width: 104%;
+        width: 100%;
         padding: 0% 0% 0% 0%;
         border-radius: 0px;
     }
@@ -941,10 +940,8 @@ footer nav
     {
         font-size: 16px;
     }
-    footer
-    {
-        width: 102%;
-    }
+
+
     footer nav
     {
         flex-direction: column;
