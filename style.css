@@ -44,14 +44,16 @@ header
 #logo
 {
     width: 70%;
+    padding-top: 25px;
 }
 /*-------*/
  
 /* Header-navigation*/
 .header-nav
 {
-    width: 30%;
     line-height: 4rem;
+    padding-right: 1%;
+    width: 20%;
 }
 header ul
 {
@@ -61,23 +63,25 @@ header ul
 header li
 {
     list-style-type: none;
-    /*width: 50%;*/
-}
-header span
-{
-    text-align: center;
-    width: 35%;
-    padding-top: 5%;
 }
 #onglet-insc
 {
     display: inline-block;
     align-self: center;
-    padding-left: 5%;
+    padding-top: 25px;
+
 }
 #onglet-heb
 {
-    padding-right: 15%;
+    width: 50%;
+    text-align: center;
+    padding-top: 25px;
+}
+#onglet-act
+{
+    width: 50%;
+    text-align: center;
+    padding-top: 25px;
 }
 .onglet-insc
 {
@@ -106,10 +110,16 @@ header span
     color: #0065FC;
 }
 
-header span:hover
+#onglet-heb:hover
 {
     border-top: 3px solid #0065FC;
 }
+
+#onglet-act:hover
+{
+    border-top: 3px solid #0065FC;
+}
+
 /* txt gras onglet nav */
 
 /*-------*/
@@ -585,6 +595,11 @@ footer nav
 @media all and (min-width: 1024px) and (max-width: 1434px)
 
 {
+    .header-nav
+{
+    width: 30%;
+}
+
     .box-hotel 
     {
         width: 40%;
@@ -643,6 +658,11 @@ footer nav
 @media all and (min-width: 801px) and (max-width: 1023px)
 
 {
+    .header-nav
+    {
+        width: 40%;
+    }
+
     .box-hotel 
     {
         width: 40%;
